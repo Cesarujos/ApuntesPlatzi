@@ -1,0 +1,32 @@
+Fibonacci
+
+let a = 0
+let b = 1
+let c
+x = prompt( "Cantidad de numeros");
+console.log(a,b)
+for(i=3;i<=x;i++){
+  c=a+b
+  console.log(c)
+  a=b
+  b=c
+}
+
+Número Mágico
+var x = 11;
+var y = prompt("Adivina el número");
+var intentos = 1;
+var rompe = 0
+ do{
+    if (x==y) {
+      alert("Adivinaste el número. "+ "Tu numero de intentos es : "+intentos);
+      rompe = 1;
+    }
+    else if (y > x) {
+      alert("Tu número es mayor");
+    }
+    else {
+      alert("Tu número es menor");
+    }
+   intentos++;
+ }while (rompe == 0)
