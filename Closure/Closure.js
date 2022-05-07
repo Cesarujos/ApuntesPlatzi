@@ -46,7 +46,7 @@ const person = () => {
   newPerson.name = 'César'
   console.log(newPerson.name)
 //Crear variables privadas con closure
-  const person = () => {
+  const person2 = () => {
     let nombre = "sin nombre"; // Se declara la variable con let justo en la raíz de la función para que pueda ser vista en todos los niveles interiores.
     return { // Se retorna un "objeto" con 2 "metodos" (funciones)
         obtenerNombre: () => { // método 1, que no recibe parámetros y sólo devuelve la variable nombre.
@@ -57,7 +57,7 @@ const person = () => {
         }
     };
 };
-    const mipersona = person(); // Define la constante mipersona y le asigna el objeto (la función) persona, recibiendo asi los 2 métodos (obtenerNombre y definirNombre).
+    const mipersona = person2(); // Define la constante mipersona y le asigna el objeto (la función) persona, recibiendo asi los 2 métodos (obtenerNombre y definirNombre).
     console.log(mipersona.obtenerNombre()); // Te dará el valor por omisión que en este caso sería sin nombre.
     mipersona.definirNombre('César'); // Asignas un nuevo nombre por medio del método definirNombre().
     console.log(mipersona.obtenerNombre()); // Te dará el nuevo valor que asignaste la línea anterior.

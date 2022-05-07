@@ -1,0 +1,16 @@
+{
+  "name": "profesional",
+  "version": "1.0.0",
+  "author": "CesarUjos",
+  "license": "MIT",
+  "keywords": [
+    "Apuntes"
+  ],
+  "description": "\"Apuntes del curso profesional de JavaScript en Platzi\"",
+  "scripts": {
+    "start": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
