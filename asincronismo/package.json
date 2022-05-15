@@ -1,0 +1,19 @@
+{
+  "name": "asincronismo",
+  "version": "1.0.0",
+  "description": "Apuntes del curso de asincronismo con JavaScript - Platzi",
+  "main": "src/index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "callback",
+    "promise",
+    "async",
+    "await"
+  ],
+  "author": "Cesarujos",
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
