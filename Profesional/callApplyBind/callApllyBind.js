@@ -6,10 +6,16 @@ const cesar = {
     name: 'CÉSAR',
     surname: 'URIARTE'
 }
-saludar.call(cesar, "1", "Cara de culo");
-saludar.apply(cesar, ["2", "Cara de culo"]);
+saludar.call(cesar, "1", "Cara de culo"); //Call -comas
 
-const cesarhabla = saludar.bind(cesar);
+//Apply
+saludar.apply(cesar, ["2", "Cara de culo"]); //Aplly - Arreglo Argumentos
+
+//Bind
+const cesarhabla = saludar.bind(cesar); //Crea nuevas funciones
 cesarhabla("3", "Cara de culo");
+console.log(cesarhabla)
+
+//Curing
 const cesarhabla2 = saludar.bind(cesar, "4");
 cesarhabla2("Cara de culo");

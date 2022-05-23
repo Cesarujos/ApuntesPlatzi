@@ -13,6 +13,7 @@ button.onclick = () => player.togglePlay();
 muteador.onclick = () => player.toggleMuted();
  
 const botones = document.getElementsByClassName('button');
+
 //Un getelementbyclass no emite una array sino un NodeList
 Array.prototype.forEach.call(botones, button => {
     button.onclick = () => alert("Estas pulsando botones");

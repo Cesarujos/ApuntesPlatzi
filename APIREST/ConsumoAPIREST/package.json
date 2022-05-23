@@ -1,0 +1,17 @@
+{
+  "name": "consumoapirest",
+  "version": "1.0.0",
+  "description": "Apuntes del curso de consumo de API REST - Platzi",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "anime-images-api": "^2.0.0"
+  }
+}
