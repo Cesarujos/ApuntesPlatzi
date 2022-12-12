@@ -10,20 +10,35 @@ const URL = 'https://api.waifu.pics/sfw/waifu';
 
 
 const images = document.getElementsByClassName('image')
-const getDog = async (image) => {
-    const response = await fetch(URL);
+const imagen = document.querySelectorAll('.image')
+const imageArray = [...imagen]
+const getDog = async (image, link) => {
+    const response = await fetch(link);
     const data = await response.json();
     image.src = data.url;
 }
-const getWaifu = () => {Array.prototype.forEach.call(images, image => {
-        getDog(image);
-        })
-    }
+// const getWaifu = () => {Array.prototype.forEach.call(images, image => {
+//         getDog(image);
+//         })
+//     }
 
+const getWaifu = (link) => {
+    imageArray.forEach((imag, i) => {
+        getDog(imagen[i], link)
+    })
+}
 
-getWaifu();
+getWaifu(URL);
 
 const btn = document.getElementById('btn')
-btn.onclick = () => getWaifu();
+btn.onclick = () => getWaifu(URL);
 
-const reload = () => getWaifu();
+const reload = () => getWaifu(URL);
+
+
+const btnSC = document.querySelector('#btn-sc')
+
+const changeSC = () => {
+    const urlSC = 'https://api.waifu.pics/sfw/megumin';
+    getWaifu(urlSC)
+}

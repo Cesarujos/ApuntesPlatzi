@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perros</title>
+    <title>Waifu</title>
     <link rel="stylesheet" href="./src/main.css">
 </head>
 <body>
-    <h1 class="titulo">Perros aleatorios</h1>
+    <h1 class="titulo">Monas Chinas aleatorios</h1>
+    <div class="button-container">
+        <button class="button-reload" id="btn">RECARGAR</button>
+        <button class="button-reload" onclick="reload()" >Otra imagen</button>
+        <button class="button-reload" onclick="changeSC()" id="btn-sc">Megumin</button>
+    </div>
     <div class="container">
         <div class="image-container">
             <img class="image" alt="Random Image of cats">
@@ -22,10 +27,6 @@
         <div class="image-container">
             <img class="image" alt="Random Image of cats">
         </div>
-    </div>
-    <div class="button-container">
-        <button id="btn">RECARGAR</button>
-        <button onclick="reload()" >Otra imagen</button>
     </div>
     <script src="./src/main.js"></script>
 </body>
