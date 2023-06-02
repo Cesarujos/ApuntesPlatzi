@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      width: 300px;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 10px 0px;
+    }
+
+    input {
+      width: 180px;
+      border: 0;
+      background-color: rgb(233, 236, 240);
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-left: 10px;
+      padding: 8px 14px;
+      background-color: red;
+      border: 0;
+      border-radius: 18px;
+      color: aliceblue;
+    }
+    button:hover{
+      cursor: pointer;
+    }
+    p {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 18px;
+      color: red;
+      font-weight: bolder;
+    }
+    #abrir{
+      display: none;
+      margin: 0 auto;
+    }
+    #copiar{
+      display: none;
+      margin: 0 auto;
+    }
+    .botones{
+      transition: all 100ms;
+    }
+    .botones:hover{
+      scale: 1.05;
+    }
+    .img-logo{
+      width: 250px;
+    }
+  </style>
+</head>
+
+<body>
+  <img class="img-logo" src="https://portal.mtc.gob.pe/images/logo.png" alt="logo-mtc">
+  <h1>SHAREPOINT MTC</h1>
+  <p>Ingresa Hoja de Ruta:</p>
+  <div class="formulario">
+    <input id="input" type="text" placeholder="Escribe HR">
+    <button class="botones" id="button">Buscar</button>
+  </div>
+  <p id="output"></p>
+  <button class="botones" id="copiar">Copiar</button>
+  <button class="botones" id="abrir">Abrir Enlace</button>
+
+
+  <script src="scripts/concatenar.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-const URL = 'https://api.waifu.pics/sfw/waifu';
+const URL = 'https://api.waifu.pics/sfw/cry';
 
 
 // fetch(URL)
